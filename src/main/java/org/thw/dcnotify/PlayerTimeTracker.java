@@ -33,7 +33,7 @@ public class PlayerTimeTracker implements Listener {
             System.out.println(player.getName() + " was online for " + onlineTime + " milliseconds.");
 
             DiscordWebhook k = new DiscordWebhook("https://discord.com/api/webhooks//");
-            int onlinePlayerCount = Bukkit.getOnlinePlayers().size();
+            int onlinePlayerCount = Bukkit.getOnlinePlayers().size() -1; //offset because leaving player is still online when processing this event
             k.setContent(event.getPlayer().getName() + " ist von dem Server gegangen! Er war " + onlineTime / 1000 / 60 + " Minuten online. Es sind nun " + onlinePlayerCount + " Spieler online.");
 
             try {
