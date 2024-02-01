@@ -19,8 +19,8 @@ public class PlayerJoinListener implements Listener {
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event) {
         DiscordWebhook k = new DiscordWebhook("https://discord.com/api/webhooks//");
-        int onlinePlayerCount=Bukkit.getOnlinePlayers().size();
-        k.setContent(event.getPlayer().getName() + " ist dem Server beigetreten! Es sind nun "+onlinePlayerCount+" Spieler online.");
+        int onlinePlayerCount = Bukkit.getOnlinePlayers().size();
+        k.setContent(event.getPlayer().getName() + " ist dem Server beigetreten! Es sind nun " + onlinePlayerCount + " Spieler online.");
 
         try {
             k.execute();

@@ -13,7 +13,6 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- *
  * Class used to execute Discord Webhooks with low effort.
  * Author: <a href="https://gist.github.com/k3kdude/fba6f6b37594eae3d6f9475330733bdb">Github Repo</a>
  */

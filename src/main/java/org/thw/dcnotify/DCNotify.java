@@ -8,6 +8,8 @@ public final class DCNotify extends JavaPlugin {
     public void onEnable() {
         // Plugin startup logic
         getServer().getPluginManager().registerEvents(new PlayerJoinListener(), this);
+        getServer().getPluginManager().registerEvents(new PlayerTimeTracker(), this);
+
     }
 
     @Override
