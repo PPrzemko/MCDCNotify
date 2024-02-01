@@ -1,0 +1,4 @@
+name: DCNotify
+version: '${project.version}'
+main: org.thw.dcnotify.DCNotify
+api-version: '1.20'
